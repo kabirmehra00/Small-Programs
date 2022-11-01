@@ -1,7 +1,11 @@
+//An if else statement in programming is a conditional statement that runs a different set of statements depending on whether an expression is true or false.
+
 #include<stdio.h>
 void main() 
 {
 	int a;
+	/*This is a program where I use if else conditional statements to make a database where you can find Srmid and Name of a Person from CSBS-1st Year batch
+	just knowing thier Reg No.*/   
 	printf("Enter the Reg No: RA22110420100");
 	scanf("%d",&a);
 	printf("Note: Add '@srmist.edu.in' after the SrmIST_ID\n enter 0 for info\n");
@@ -51,7 +55,7 @@ void main()
 	}
 	else if(a == 12)
 	{ 
-		printf("Name : MRIDUL MEHRA\nSrmIST_ID : mm3921");
+		printf("Name : MRIDUL MEHRA ((Owner))\nSrmIST_ID : mm3921");
 	}
 	else if(a == 13)
 	{ 
