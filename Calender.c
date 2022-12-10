@@ -5,24 +5,21 @@ int get_1st_weekday(int year)
 {
 
     int d;
+    //Formula
     d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
     return d;
 }
 
 int main()
 {
-    system("cls");
-    system("Color 0A");
     int year, month, day, daysInMonth, weekDay = 0, startingDay;
     printf("\nEnter Year:");
     scanf("%d", &year);
-
     char *months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     int monthDay[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
         monthDay[1] = 29;
-
     startingDay = get_1st_weekday(year);
 
     for (month = 0; month < 12; month++)
